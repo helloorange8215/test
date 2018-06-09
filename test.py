@@ -196,3 +196,4 @@ youtube.com
 putlockerr.is
 putlockerr.is
 putlockerr.is
+google.com 
