@@ -199,3 +199,4 @@ putlockerr.is
 google.com 
 watchtvseries.ag
 watchtvseries.ag 
+speedvid.net
