@@ -218,3 +218,4 @@ proxytube.com
 ukproxy.com
 ukproxy.net
 proxyserverfree.net
+dnsrsearch.com
