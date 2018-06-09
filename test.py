@@ -205,3 +205,6 @@ tumblr.com
 http://fandom.wikia.com
 house.wikia.com
 wikia.com
+http://fandom.wikia.com
+house.wikia.com
+wikia.com
