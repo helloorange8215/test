@@ -202,3 +202,6 @@ watchtvseries.ag
 speedvid.net
 fuckyeahhousemd.tumblr.com
 tumblr.com
+http://fandom.wikia.com
+house.wikia.com
+wikia.com
