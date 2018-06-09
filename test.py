@@ -210,3 +210,4 @@ house.wikia.com
 wikia.com
 http://fandom.wikia.com
 fandom.wikia.com
+wikia.com
