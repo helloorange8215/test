@@ -423,3 +423,4 @@ webcrawler.com
 wow.com
 search.aol.com
 ask.com
+search.yahoo.com
