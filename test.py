@@ -424,3 +424,4 @@ wow.com
 search.aol.com
 ask.com
 search.yahoo.com
+bing.com
