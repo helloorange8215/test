@@ -9,7 +9,10 @@ def refresh_urls():
   for i in domain_list:
     with open("/etc/hosts","a") as f:
       if ("127.0.0.1\t%s www.%s\n" %(i,i)) not in current_blacklisted_domains:
-        f.write("127.0.0.1\t%s www.%s\n"%(i,i))
+        if "*" in i:
+          f.write("127.0.0.1\t%s\n"%i)
+        else:
+          f.write("127.0.0.1\t%s www.%s\n"%(i,i))
 
 def uniq_etc_hosts():
   os.system("sudo sort -u -o /etc/hosts /etc/hosts")
