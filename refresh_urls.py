@@ -16,7 +16,7 @@ def refresh_urls():
 
 def dns_reset():
   if "WIRELESS" in subprocess.check_output("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
-    os.system("sudo networksetup -setdnsservers Wi-Fi "Empty")
+    os.system("sudo networksetup -setdnsservers Wi-Fi \"Empty\"")
 
 def uniq_etc_hosts():
   os.system("sudo sort -u -o /etc/hosts /etc/hosts")
