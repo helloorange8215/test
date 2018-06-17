@@ -18,6 +18,21 @@ def dns_reset():
   if "WIRELESS" in subprocess.check_output("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
     os.system("sudo networksetup -setdnsservers Wi-Fi \"Empty\"")
 
+def other_check():
+  if os.path.exists("/private/do_not_initiate_empty_etc_hosts_for_1_hour") == True:
+    return None
+  # work this Function only if not this File
+  if os.path.exists("/private/do_not_initiate_empty_etc_hosts_for_1_hour") == False:
+    # Work this function Only if Wi-Fi name is `Google Starbucks`
+    if "Google Starbucks" in subprocess.check_output("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
+      os.system("sudo rm -rf /etc/hosts")
+      os.system("echo '' | sudo tee -a /etc/hosts && sleep 2")
+      os.system("sudo networksetup -setdnsservers Wi-Fi \"Empty\"")
+      os.system("sudo touch /private/do_not_initiate_empty_etc_hosts_for_1_hour")
+      os.system("sleep 3600") # that one hour wait
+      os.system("sudo rm -rf /private/do_not_initiate_empty_etc_hosts_for_1_hour")
+
+
 def uniq_etc_hosts():
   os.system("sudo sort -u -o /etc/hosts /etc/hosts")
 
@@ -33,6 +48,7 @@ def firefox_check():
 if __name__ == "__main__":
   refresh_urls()
   dns_reset()
+  other_check()
   uniq_etc_hosts()
   firefox_check()
 
