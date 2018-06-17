@@ -15,7 +15,7 @@ def refresh_urls():
           f.write("127.0.0.1\t%s www.%s\n"%(i,i))
 
 def dns_reset():
-  if "WIRELESS" in subprocess.check_output("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
+  if "WIRELESS" in subprocess.getoutput("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
     os.system("sudo networksetup -setdnsservers Wi-Fi \"Empty\"")
 
 def other_check():
@@ -24,7 +24,7 @@ def other_check():
   # work this Function only if not this File
   if os.path.exists("/private/do_not_initiate_empty_etc_hosts_for_1_hour") == False:
     # Work this function Only if Wi-Fi name is `Google Starbucks`
-    if "Google Starbucks" in subprocess.check_output("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
+    if "Google Starbucks" in subprocess.getoutput("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'", shell=True):
       os.system("sudo rm -rf /etc/hosts")
       os.system("echo '' | sudo tee -a /etc/hosts && sleep 2")
       os.system("sudo networksetup -setdnsservers Wi-Fi \"Empty\"")
@@ -54,5 +54,6 @@ if __name__ == "__main__":
 
 
 # Patched - 06.09.18 - Resolved all TLDS.
+
 
 
