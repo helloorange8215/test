@@ -2424,7 +2424,6 @@ ping.images.yahoo.com
 ping.search.yahoo.com
 pink.images.yahoo.com
 pink.search.yahoo.com
-pinterest.com
 pioneer.images.yahoo.com
 pioneer.search.yahoo.com
 pizza.images.yahoo.com
@@ -3493,3 +3492,4 @@ test_website15.com
 test_website12.com
 test_website17.com
 test_website15.com
+test_website12.com
