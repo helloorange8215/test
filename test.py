@@ -2105,3 +2105,4 @@ tnt.com
 test_website15.com
 open.spotify.com
 spotify.com
+allmusic.com
