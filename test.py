@@ -2109,6 +2109,12 @@ allmusic.com
 qc.4everproxy.com
 images.search.yahoo.com
 search.images.yahoo.com
-geofloss.com/ncurlie.org/nen.flossmanuals.net/nhowtobypassinternetcensorship.org/njasminedirectory.com
+geofloss.com
+curlie.org
+en.flossmanuals.net
+howtobypassinternetcensorship.org
+jasminedirectory.com
+flossmanuals.net
 tubeunblock.info
 anonproxy.org
+test_website12.com
