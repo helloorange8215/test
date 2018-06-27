@@ -2108,3 +2108,4 @@ spotify.com
 allmusic.com
 qc.4everproxy.com
 images.search.yahoo.com
+search.images.yahoo.com
