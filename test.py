@@ -2122,3 +2122,4 @@ unblock-me.org
 qc.movieproxy.com
 movieproxy.com
 4everproxy.com
+qc.4everproxy.com
