@@ -2120,3 +2120,4 @@ anonproxy.org
 test_website12.com
 unblock-me.org
 qc.movieproxy.com
+movieproxy.com
